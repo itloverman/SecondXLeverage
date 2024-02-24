@@ -73,6 +73,7 @@ const useStyles = makeStyles((theme: any) =>
         display: 'flex',
         flexDirection: 'column',
         height: '159vh',
+        justifyContent: 'flex-start',
       }
     },
     dialogComplex: {

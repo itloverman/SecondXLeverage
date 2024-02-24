@@ -154,7 +154,7 @@ a {
   position: unset !important;
 }
 
-.css-gulbw7-MuiButtonBase-root-MuiTab-root.Mui-selected {
+/* .css-gulbw7-MuiButtonBase-root-MuiTab-root.Mui-selected {
   color: #090E14 !important;
   background: #03C7BD !important;
   border: 0.5px solid rgba(0, 0, 0, 0.04);
@@ -194,18 +194,18 @@ a {
   font-weight: 600;
   line-height: 1.25rem;
   /* 166.667% */
-  letter-spacing: -0.005rem;
+  /* letter-spacing: -0.005rem;
 }
 
 .css-1aquho2-MuiTabs-indicator {
   background-color: unset !important;
-}
+} */
 
 .css-19kzrtu {
   padding: unset !important;
 }
 
-.css-yafthl-MuiSlider-markLabel {
+/* .css-yafthl-MuiSlider-markLabel {
   color: #7B7B7B !important;
 }
 
@@ -240,7 +240,7 @@ a {
 
 .css-1aznpnh-MuiSlider-root {
   /* color:#03C7BD !important; */
-  color: #1F2328 !important;
+  /* color: #1F2328 !important;
 }
 
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
@@ -259,7 +259,7 @@ a {
 
 .css-d9c359-MuiButtonBase-root-MuiToggleButton-root {
   text-transform: capitalize !important;
-}
+} */ 
 
 .css-hip9hq-MuiPaper-root-MuiAppBar-root {
   background-color: rgba(255, 255, 255, 0.01) !important;

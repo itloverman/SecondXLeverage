@@ -101,6 +101,7 @@ const useStyles = makeStyles((theme: any) =>
         border: 'none',
         background: 'unset',
         gridTemplateRows: '0.5fr 4.5fr 0.5fr',
+        height: 'unset !important',
       }
     },
     titleText: {
