@@ -29,12 +29,13 @@ const useStyles = makeStyles((theme: any) =>
   createStyles({
     homeContainer: {
       marginTop: '-5.5rem',
-      minHeight: '115vh',
+      // minHeight: '115vh',
+      height:'fit-content',
       backgroundColor: '#000210',
       width: '100%',
       [theme.breakpoints.down('sm')]: {
         width: '100%',
-        height: '170vh',
+        // height: '170vh',
         minHeight: 'unset !important',
         marginTop: '-4.5rem',
       }
@@ -46,12 +47,13 @@ const useStyles = makeStyles((theme: any) =>
     },
     gradientTopCircle: {
       position: 'absolute',
-      opacity: '100%',
+      opacity: '60%',
       width: '80%',
       height: '800px',
       [theme.breakpoints.down('sm')]: {
         width: '100%',
-        height: '300px'
+        height: '300px',
+        opacity: '100%',
       }
     },
     gradientCircleContain: {
@@ -60,19 +62,20 @@ const useStyles = makeStyles((theme: any) =>
     },
     secondLayer: {
       top: '105px',
-      position: 'absolute',
+      // position: 'absolute',
       width: '100%',
-      height: '90vh',
+      // height: '90vh',
       justifyContent: 'center',
       left: '0',
       right: '0',
       display: 'grid',
       gridTemplateColumns: '1fr 4fr 8fr 1fr',
       gap: '1rem',
+      marginTop:'5.5rem',
       [theme.breakpoints.down('sm')]: {
         display: 'flex',
         flexDirection: 'column',
-        height: '159vh',
+        // height: '159vh',
         justifyContent: 'flex-start',
       }
     },
@@ -268,11 +271,12 @@ const LendingPage = () => {
       <div className='row w-100'>
         <div className='col-12 col-md-12 col-lg-12 mx-auto'>
           <div className={classes.homeContainer}>
-            <div className={classes.firstLayer}>
-              <div className={classes.gradientCircleContain}>
-                <img src={gradientCircle} className={classes.gradientTopCircle}></img>
-              </div>
+            <div className={classes.gradientCircleContain}>
+              <img src={gradientCircle} className={classes.gradientTopCircle}></img>
             </div>
+            {/* <div className={classes.firstLayer}>
+              
+            </div> */}
             <div className={classes.secondLayer}>
               <div className={classes.mobileRemove}>
                 {/* leftspace */}

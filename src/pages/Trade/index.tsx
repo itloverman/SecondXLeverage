@@ -27,7 +27,8 @@ const useStyles = makeStyles((theme: any) =>
   createStyles({
     homeContainer: {
       marginTop: '-5.5rem',
-      height: '120vh',
+      // height: '120vh',
+      height: 'fit-content',
       backgroundColor: '#000210',
       width: '100%',
       [theme.breakpoints.down('sm')]: {
