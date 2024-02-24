@@ -96,6 +96,7 @@ const useStyles = makeStyles((theme: any) =>
       gridTemplateRows: '1fr 10fr 1.5fr',
       gap: '1rem',
       alignItems: 'flex-start',
+      height: '100%',
       [theme.breakpoints.down('sm')]: {
         border: 'none',
         background: 'unset',
