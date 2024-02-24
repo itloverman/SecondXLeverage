@@ -31,9 +31,9 @@ const useStyles = makeStyles((theme: any) =>
       backgroundColor: '#000210',
       width: '100%',
       [theme.breakpoints.down('sm')]: {
-        height: '115vh',
         width: '100%',
         marginTop: '-4.5rem',
+        height:'fit-content'
       }
     },
     firstLayer: {
@@ -60,19 +60,17 @@ const useStyles = makeStyles((theme: any) =>
     },
     secondLayer: {
       top: '105px',
-      position: 'absolute',
+      // position: 'absolute',
       width: '100%',
-      height: '90vh',
       justifyContent: 'center',
-      left: '0',
-      right: '0',
       display: 'grid',
       gridTemplateColumns: '1fr 4fr 8fr 1fr',
       gap: '1rem',
+      marginTop:'5rem',
       [theme.breakpoints.down('sm')]: {
-        flexDirection: 'column',
+        gap: '0rem',
         gridTemplateColumns: '1fr',
-        height: '80vh',
+        marginTop: '5.5rem',
       }
     },
     dialogComplex: {
@@ -82,6 +80,7 @@ const useStyles = makeStyles((theme: any) =>
         flexDirection:'column',
         alignItems:'center',
         paddingTop: '0rem',
+        height: '90%',
       }
     },
     dialog: {
@@ -101,7 +100,6 @@ const useStyles = makeStyles((theme: any) =>
         border: 'none',
         background: 'unset',
         gridTemplateRows: '0.5fr 4.5fr 0.5fr',
-        height: 'unset !important',
       }
     },
     titleText: {
@@ -265,11 +263,12 @@ const TradePage = () => {
       <div className='row w-100'>
         <div className='col-12 col-md-12 col-lg-12 mx-auto'>
           <div className={classes.homeContainer}>
-            <div className={classes.firstLayer}>
-              <div className={classes.gradientCircleContain}>
-                <img src={gradientCircle} className={classes.gradientTopCircle}></img>
-              </div>
+            <div className={classes.gradientCircleContain}>
+              <img src={gradientCircle} className={classes.gradientTopCircle}></img>
             </div>
+            {/* <div className={classes.firstLayer}>
+              
+            </div> */}
             <div className={classes.secondLayer}>
               <div className={classes.mobileRemove}>
               </div>
@@ -373,7 +372,7 @@ const TradePage = () => {
                   </CustomTabPanel>
                 </div>
               </div>
-              <div></div>
+              <div className={classes.mobileRemove}></div>
             </div>
           </div>
         </div>

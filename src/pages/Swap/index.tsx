@@ -220,8 +220,8 @@ const SwapPage = () => {
                           borderRadius: '0.4rem'
                         },
                         '& button': {
-                          color: 'white', backgroundColor: '#080D1C', textTransform: 'capitalize', fontFamily: 'SF Pro Text',
-                          fontSize: '1rem', fontStyle: 'normal', fontWeight: '600', lineHeight: '1.25rem'
+                          color: 'white', backgroundColor: '#080D1C', textTransform: 'capitalize', fontFamily: 'Inter',
+                          fontSize: '0.8rem', fontStyle: 'normal', fontWeight: '400', lineHeight: '1.25rem'
                         }
                       }}
                     >

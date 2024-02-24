@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) =>
             borderRadius: '0.625rem',
             background: '#03C7BD',
             border: 'none',
+            color: '#0B0B0B !important'
         }
     })
 );
@@ -23,7 +24,7 @@ const ConnectWalletBtn = () => {
 
     return (
         <button className={classes.connectWalletButton}>
-            <div style={{ display: 'flex', flexDirection: 'column', color:'#0B0B0B !important'}}>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
                 Connect Wallet
             </div>
         </button>

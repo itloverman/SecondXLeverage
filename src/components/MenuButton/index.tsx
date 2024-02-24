@@ -50,7 +50,7 @@ const MenuButton = () => {
                     backgroundColor: '#007A74 !important', color: 'white',
                 },
                 '& button': {
-                    color: 'white', backgroundColor: '#000515', textTransform: 'capitalize'
+                    color: 'white !important', backgroundColor: '#000515', textTransform: 'capitalize'
                 }
             }}
         >
