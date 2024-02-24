@@ -115,7 +115,7 @@ const SwapInput = () => {
             </div>
             <Dropdown className={classes.swapSelectContain} align='end'>
                 <Dropdown.Toggle>
-                    <div className='d-flex' >
+                    <div className='d-flex' style={{alignItems:'center'}} >
                         <div>
                             <img src={VectorMark} className={classes.icon}></img>
                         </div>
@@ -146,43 +146,6 @@ const SwapInput = () => {
                 </Dropdown.Menu>
             </Dropdown>
 
-            {/* <FormControl sx={{width:'100%'}}>
-                <Select
-                    value={selectedToken}
-                    onChange={handleSelectedToken}
-                    displayEmpty
-                    inputProps={{ 'aria-label': 'Without label' }}
-                    className={classes.selectbox} 
-                >
-                    <MenuItem value="" className={classes.menuItem} style={{display:'none'}}>
-                        <div>
-                            <img src={VectorMark} className={classes.icon}></img>
-                        </div>
-                        <div>
-                            <div className={classes.egldText}>EGLD</div>
-                            <div className={classes.descriptionText} style={{ fontSize: '0.75rem' }}>41,0862</div>
-                        </div>
-                    </MenuItem>
-                    <MenuItem value="41,0862" className={classes.menuItem}>
-                        <div>
-                            <img src={VectorMark} className={classes.icon}></img>
-                        </div>
-                        <div>
-                            <p className={classes.egldText}>EGLD</p>
-                            <p className={classes.descriptionText} style={{ fontSize: '0.75rem', display:'none'}}>41,0862</p>
-                        </div>
-                    </MenuItem>
-                    <MenuItem value="41,0862ss" className={classes.menuItem}>
-                        <div>
-                            <img src={VectorMark} className={classes.icon}></img>
-                        </div>
-                        <div>
-                            <p className={classes.egldText}>EGLD</p>
-                            <p className={classes.descriptionText} style={{ fontSize: '0.75rem' }}>41,0862</p>
-                        </div>
-                    </MenuItem>
-                </Select>
-            </FormControl> */}
         </div>
     );
 };
