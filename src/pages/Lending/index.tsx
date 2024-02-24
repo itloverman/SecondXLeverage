@@ -289,7 +289,7 @@ const LendingPage = () => {
                       <Tabs value={value} onChange={handleTabChange} aria-label="icon position tabs example"
                         sx={{
                           '& button.Mui-selected': {
-                            backgroundColor: '#03C7BD', color: 'black', border: '0.5px solid rgba(0, 0, 0, 0.04)',
+                            backgroundColor: '#03C7BD', color: 'black', borderBottom: 'unset !important',
                             borderRadius: '0.4rem'
                           },
                           '& button': {

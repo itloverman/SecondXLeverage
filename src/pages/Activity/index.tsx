@@ -92,6 +92,18 @@ const useStyles = makeStyles((theme: any) =>
       borderRadius: '0.6rem !important',
       border: '0.1px solid #1D2025 !important',
       background: '#000515',
+      '& button.Mui-selected': {
+        [theme.breakpoints.down('sm')]: {
+          borderRadius: '1.25rem !important',
+          backgroundColor: '#1F1F1F !important'
+        }
+      },
+      '& button': {
+        [theme.breakpoints.down('sm')]: {
+          borderRadius: '1.25rem !important',
+          backgroundColor: '#000515'
+        }
+      },
       [theme.breakpoints.down('sm')]: {
         borderRadius: '1.25rem !important',
         backgroundColor: '#000515'
@@ -191,7 +203,7 @@ const ActivityPage = () => {
   return (
     <div className='d-flex flex-fill align-items-center container'>
       <div className='row w-100'>
-        <div className='col-12 col-md-8 col-lg-12 mx-auto'>
+        <div className='col-12 col-md-12 col-lg-12 mx-auto'>
           <div className={classes.homeContainer}>
             <div className={classes.firstLayer}>
               <div className={classes.gradientCircleContain}>
@@ -218,7 +230,8 @@ const ActivityPage = () => {
                           background: '#013D3C !important', color: 'white',
                         },
                         '& button': {
-                          color: 'white', backgroundColor: '#000515', textTransform: 'capitalize'
+                          borderRadius: '0.6rem !important',
+                          color: 'white', backgroundColor: '#000515', textTransform: 'capitalize',
                         },
                       }}
                     >

@@ -283,7 +283,8 @@ const TradePage = () => {
                     <Box>
                       <Tabs value={value} onChange={handleTabChange} aria-label="basic tabs example"
                         sx={{ 
-                          '& button.Mui-selected': { backgroundColor: '#03C7BD', color: 'black', border: '0.5px solid rgba(0, 0, 0, 0.04)',
+                          '& button.Mui-selected': {
+                            backgroundColor: '#03C7BD', color: 'black', borderBottom: 'unset !important',
                             borderRadius: '0.4rem' },
                           '& button': { color: 'white', backgroundColor: '#080D1C', textTransform: 'capitalize', fontFamily: 'SF Pro Text',
                             fontSize: '1rem', fontStyle: 'normal', fontWeight: '600', lineHeight: '1.25rem' }  
@@ -347,7 +348,7 @@ const TradePage = () => {
                   <Tabs value={logTabValue} onChange={handleLogTabChange} aria-label="basic tabs example"
                     sx={{
                       '& button.Mui-selected': {
-                        color: 'white'
+                        color: 'white', borderBottom:'unset !important'
                       },
                       '& button': {
                         color: '#666', textTransform: 'capitalize'
