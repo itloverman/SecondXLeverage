@@ -21,10 +21,11 @@ const useStyles = makeStyles((theme: any) =>
       minHeight: '100vh',
       backgroundColor: '#000210',
       width: '100%',
+      height:'fit-content',
       [theme.breakpoints.down('sm')]: {
         width: '100%',
-        height: '100vh',
-        minHeight: 'unset !important',
+        // height: '100vh',
+        // minHeight: 'unset !important',
         marginTop: '-4.5rem',
       }
     },
@@ -49,19 +50,19 @@ const useStyles = makeStyles((theme: any) =>
     },
     secondLayer: {
       top: '105px',
-      position: 'absolute',
       width: '100%',
-      height: '90vh',
+      minHeight: '90vh',
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'space-between',
+      justifyContent: 'center',
       alignItems: 'center',
       [theme.breakpoints.down('sm')]: {
-        height: '78vh',
+        marginTop:'6rem',
+        minHeight:'unset !important',
+        justifyContent: 'space-between',
       }
     },
     dialog: {
-      marginTop: '7%',
       width: '25%',
       flexShrink: '0',
       borderRadius: '0.625rem',
@@ -72,13 +73,14 @@ const useStyles = makeStyles((theme: any) =>
       gridTemplateRows: '1fr 10fr 1.5fr',
       gap: '1.5rem',
       alignItems: 'flex-start',
+      zIndex:'1',
       [theme.breakpoints.down('sm')]: {
         width: '100%',
         flexDirection: 'column',
         display: 'flex',
         border: 'unset',
         justifyContent: 'space-between',
-        height: '100%',
+        height: '80vh',
         background: 'none',
       }
     },
@@ -188,10 +190,8 @@ const SwapPage = () => {
       <div className='row w-100'>
         <div className='col-12 col-md-12 col-lg-12 mx-auto'>
           <div className={classes.homeContainer}>
-            <div className={classes.firstLayer}>
-              <div className={classes.gradientCircleContain}>
-                <img src={gradientCircle} className={classes.gradientTopCircle}></img>
-              </div>
+            <div className={classes.gradientCircleContain}>
+              <img src={gradientCircle} className={classes.gradientTopCircle}></img>
             </div>
             <div className={classes.secondLayer}>
               <MenuButton />

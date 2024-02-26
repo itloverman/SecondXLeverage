@@ -47,9 +47,10 @@ const useStyles = makeStyles((theme: any) =>
     },
     gradientTopCircle: {
       position: 'absolute',
-      opacity: '60%',
+      opacity: '80%',
       width: '80%',
       height: '800px',
+      zIndex:'1',
       [theme.breakpoints.down('sm')]: {
         width: '100%',
         height: '300px',
@@ -72,6 +73,7 @@ const useStyles = makeStyles((theme: any) =>
       gridTemplateColumns: '1fr 4fr 8fr 1fr',
       gap: '1rem',
       marginTop:'5.5rem',
+      zIndex:'2',
       [theme.breakpoints.down('sm')]: {
         display: 'flex',
         flexDirection: 'column',
@@ -81,6 +83,7 @@ const useStyles = makeStyles((theme: any) =>
     },
     dialogComplex: {
       paddingTop: '3rem',
+      zIndex: '3',
       [theme.breakpoints.down('sm')]: {
         paddingTop: 'unset',
         display: 'flex',
@@ -167,7 +170,8 @@ const useStyles = makeStyles((theme: any) =>
       height: '100%'
     },
     lendingTableComplex: {
-      paddingTop: '3rem'
+      paddingTop: '3rem',
+      zIndex:'2'
     },
     lendingTable: {
       width: '100%',

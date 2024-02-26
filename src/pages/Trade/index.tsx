@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme: any) =>
   createStyles({
     homeContainer: {
       marginTop: '-5.5rem',
-      // height: '120vh',
+      minHeight: '100vh',
       height: 'fit-content',
       backgroundColor: '#000210',
       width: '100%',
@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme: any) =>
       }
     },
     firstLayer: {
-      position: 'absolute',
+      position: 'relative',
       width: '100%',
       minHeight: '100vh',
       [theme.breakpoints.down('sm')]: {
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme: any) =>
     gradientTopCircle: {
       position: 'absolute',
       opacity: '100%',
-      width: '80%',
+      width: '100%',
       height: '800px',
       [theme.breakpoints.down('sm')]: {
         width: '100%',
@@ -67,15 +67,15 @@ const useStyles = makeStyles((theme: any) =>
       display: 'grid',
       gridTemplateColumns: '1fr 4fr 8fr 1fr',
       gap: '1rem',
-      marginTop:'5rem',
+      marginTop:'5.5rem',
       [theme.breakpoints.down('sm')]: {
         gap: '0rem',
         gridTemplateColumns: '1fr',
-        marginTop: '5.5rem',
       }
     },
     dialogComplex: {
       paddingTop: '3rem',
+      zIndex:'2',
       [theme.breakpoints.down('sm')]: {
         display:'flex',
         flexDirection:'column',
@@ -96,11 +96,14 @@ const useStyles = makeStyles((theme: any) =>
       gridTemplateRows: '1fr 10fr 1.5fr',
       gap: '1rem',
       alignItems: 'flex-start',
-      height: '100%',
+      height:'100%',
       [theme.breakpoints.down('sm')]: {
         border: 'none',
         background: 'unset',
-        gridTemplateRows: '0.5fr 4.5fr 0.5fr',
+        display:'flex',
+        flexDirection:'column',
+        justifyContent:'space-between',
+        alignItems:'flex-end',
       }
     },
     titleText: {
@@ -159,6 +162,7 @@ const useStyles = makeStyles((theme: any) =>
       gridTemplateRows: '7fr 3fr',
       paddingTop: '3rem',
       gap: '1rem',
+      zIndex:'2',
       [theme.breakpoints.down('sm')]: {
         display: 'none',
       }
@@ -166,7 +170,8 @@ const useStyles = makeStyles((theme: any) =>
     walletButton: {
       display: 'flex',
       alignItems: 'flex-end',
-      height: '100%'
+      height: '100%',
+      width:'100%'
     },
     logContain: {
       width: '100%',
@@ -264,12 +269,12 @@ const TradePage = () => {
       <div className='row w-100'>
         <div className='col-12 col-md-12 col-lg-12 mx-auto'>
           <div className={classes.homeContainer}>
+            
+            {/* <div className={classes.firstLayer}> */}
             <div className={classes.gradientCircleContain}>
               <img src={gradientCircle} className={classes.gradientTopCircle}></img>
             </div>
-            {/* <div className={classes.firstLayer}>
-              
-            </div> */}
+            {/* </div> */}
             <div className={classes.secondLayer}>
               <div className={classes.mobileRemove}>
               </div>

@@ -318,6 +318,32 @@ const ActivityPage = () => {
                       <td>20 Days</td>
                       <td className={classes.statusText}>Open</td>
                     </tr>
+                    <tr className={classes.tableBorrowRow}>
+                      <td style={{ color: '#868686' }}>1</td>
+                      <td>21.01.2024 - 22:55:25</td>
+                      <td className={classes.borrowingText}>Borrow</td>
+                      <td className={classes.amountCell}>
+                        101
+                        <img src={VectorMark}></img>
+                      </td>
+                      <td>$50.48</td>
+                      <td>20.02%</td>
+                      <td>20 Days</td>
+                      <td className={classes.statusText}>Open</td>
+                    </tr>
+                    <tr className={classes.tableBorrowRow}>
+                      <td style={{ color: '#868686' }}>1</td>
+                      <td>21.01.2024 - 22:55:25</td>
+                      <td className={classes.borrowingText}>Borrow</td>
+                      <td className={classes.amountCell}>
+                        101
+                        <img src={VectorMark}></img>
+                      </td>
+                      <td>$50.48</td>
+                      <td>20.02%</td>
+                      <td>20 Days</td>
+                      <td className={classes.statusText}>Open</td>
+                    </tr>
                   </table>
                 </div>
               </div>
