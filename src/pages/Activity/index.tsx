@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthRedirectWrapper } from 'components';
 import { createStyles, makeStyles } from '@mui/styles';
+import { useTheme } from '@mui/material/styles';
 import gradientCircle from 'assets/img/Eclipse.svg';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import ToggleButton from '@mui/material/ToggleButton';
@@ -183,7 +184,7 @@ const ActivityPage = () => {
 
   const classes = useStyles();
   const navigate = useNavigate();
-
+  const theme = useTheme();
   const [alignment, setAlignment] = React.useState('web');
   const handleChangeToogle = (
     event: React.MouseEvent<HTMLElement>,
@@ -226,11 +227,15 @@ const ActivityPage = () => {
                       className={classes.toogleButtonGroup}
                       sx={{
                         '& button.Mui-selected': {
-                          borderRadius: '0.6rem !important',
+                          borderRadius: '0.6rem',
                           background: '#013D3C !important', color: 'white',
+                          [theme.breakpoints.down('sm')]: {
+                            borderRadius: '1.25rem !important',
+                            backgroundColor: '#1F1F1F !important'
+                          }
                         },
                         '& button': {
-                          borderRadius: '0.6rem !important',
+                          borderRadius: '0.6rem',
                           color: 'white', backgroundColor: '#000515', textTransform: 'capitalize',
                         },
                       }}
