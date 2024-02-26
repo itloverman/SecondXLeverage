@@ -90,6 +90,7 @@ const SelectBox = () => {
                 sx={{
                     '& .MuiSvgIcon-root': {
                         color: 'white',
+                        position:'unset !important'
                     },
                     '& .MuiOutlinedInput-notchedOutline': {
                         border: 'unset !important'
@@ -100,6 +101,7 @@ const SelectBox = () => {
                         gap: '0.5rem !important',
                         padding: 'unset !important'
                     },
+
                 }}
             >
                 <MenuItem value="" className={classes.menuItem}>

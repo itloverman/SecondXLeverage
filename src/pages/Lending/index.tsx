@@ -305,7 +305,11 @@ const LendingPage = () => {
                             color: 'white', backgroundColor: '#080D1C', textTransform: 'capitalize', fontFamily: 'SF Pro Text', height: '3.5rem !important',
                             minHeight: 'unset !important', fontSize: '1rem', fontStyle: 'normal', fontWeight: '600', lineHeight: '1.25rem',
                           }
-                        }} className={classes.tabsStyle}>
+                        }}
+                        TabIndicatorProps={{
+                          style: { display: 'none' }
+                        }}
+                        className={classes.tabsStyle}>
                         <Tab icon={<ArrowDropUpIcon />} iconPosition="end" label="Lend" sx={{ width: '50%' }} />
                         <Tab icon={<ArrowDropDownIcon />} iconPosition="end" label="Borrow" sx={{ width: '50%' }} />
                       </Tabs>

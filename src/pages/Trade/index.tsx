@@ -363,6 +363,9 @@ const TradePage = () => {
                       '& button': {
                         color: '#666', textTransform: 'capitalize'
                       }
+                    }}
+                    TabIndicatorProps={{
+                      style: { display: 'none' }
                     }}>
                     <Tab label="Open Positions(0)" />
                     <Tab label="Open Positions(0)" />

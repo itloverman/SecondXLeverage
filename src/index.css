@@ -91,7 +91,7 @@ a {
   gap: 3rem;
 }
 
-.css-d9c359-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
+/* .css-d9c359-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
   color: #111111 !important;
   background-color: #03C7BD !important;
 }
@@ -108,9 +108,9 @@ a {
 
 .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
   background: #080D1C !important;
-}
+} */
 
-.css-bpeome-MuiSvgIcon-root-MuiSelect-icon {
+/* .css-bpeome-MuiSvgIcon-root-MuiSelect-icon {
   color: white !important;
   transform: rotate(0deg) !important;
 }
@@ -133,26 +133,26 @@ a {
 
 .form-select:focus {
   box-shadow: unset !important;
-}
+} */
 
 .css-11b3ww9-MuiPaper-root-MuiAppBar-root {
   padding: unset !important;
 }
 
-.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+/* .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
   display: flex !important;
   align-items: flex-start !important;
   gap: 0.5rem !important;
   padding: unset !important;
-}
+} */
 
-.css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
+/* .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
   position: unset !important;
 }
 
 .css-bpeome-MuiSvgIcon-root-MuiSelect-icon {
   position: unset !important;
-}
+} */
 
 /* .css-gulbw7-MuiButtonBase-root-MuiTab-root.Mui-selected {
   color: #090E14 !important;
