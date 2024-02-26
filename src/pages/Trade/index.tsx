@@ -294,7 +294,11 @@ const TradePage = () => {
                             borderRadius: '0.4rem' },
                           '& button': { color: 'white', backgroundColor: '#080D1C', textTransform: 'capitalize', fontFamily: 'SF Pro Text',
                             fontSize: '1rem', fontStyle: 'normal', fontWeight: '600', lineHeight: '1.25rem' }  
-                        }} className={classes.tabsStyle}>
+                        }} 
+                        TabIndicatorProps={{
+                          style: { display: 'none' }
+                        }} 
+                        className={classes.tabsStyle}>
                         <Tab label="Long" sx={{ width: '50%' }} />
                         <Tab label="Short" sx={{ width: '50%' }} />
                       </Tabs>
