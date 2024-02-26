@@ -67,7 +67,7 @@ const useStyles = makeStyles((theme: any) =>
       display: 'grid',
       gridTemplateColumns: '1fr 4fr 8fr 1fr',
       gap: '1rem',
-      marginTop:'5.5rem',
+      paddingTop:'5.5rem',
       [theme.breakpoints.down('sm')]: {
         gap: '0rem',
         gridTemplateColumns: '1fr',

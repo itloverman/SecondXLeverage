@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme: any) =>
                 display: 'block !important',
                 borderRadius: '1.25rem !important',
                 border: '0.1px solid #1D2025 !important',
-                background: '#000515 !important'
+                background: '#000515 !important',
+                zIndex:'2'
             }
         },
         toogleMobileCustomBtn: {

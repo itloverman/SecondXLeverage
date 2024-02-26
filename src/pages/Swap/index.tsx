@@ -56,8 +56,9 @@ const useStyles = makeStyles((theme: any) =>
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
+      zIndex:'2',
       [theme.breakpoints.down('sm')]: {
-        marginTop:'6rem',
+        paddingTop:'5.5rem',
         minHeight:'unset !important',
         justifyContent: 'space-between',
       }
